@@ -50,11 +50,11 @@ python run app.py
 ## 🎥 View Output
 - Real time detection results of helmet
   
-![Bar Plot](helmet_captured.png)
+![Bar Plot](assets.png)
 
 - Adjust the volume by changing the distance between your thumb (ID 4) and index finger (ID 8). The further apart, the higher the volume.
   
-![Bar Plot](non_helmet_captured.png)
+![Bar Plot](output.png)
 
 ## 💡 Further Development Ideas
 - Adding mute/unmute gestures with specific hand poses.
