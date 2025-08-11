@@ -49,9 +49,11 @@ python run app.py
 
 ## 🎥 View Output
 - Initial view
+  
 ![Bar Plot](output.png)
 
 - Usage output
+  
 ![Bar Plot](assets.png)
 
 ## 💡 Further Development Ideas
