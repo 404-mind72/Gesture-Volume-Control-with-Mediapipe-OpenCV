@@ -20,9 +20,52 @@ Volume control is performed through PyCaw, which interacts directly with the Win
 - Comtypes Interacts with Windows APIs via COM
 
 ## 🏗 Program Architecture
-1. Video Capture : The camera captures video frames using cv2.VideoCapture().
-2. Landmark Detection : The frames are processed with MediaPipe Hands to obtain 21 landmark points.
-3. Distance Calculation : The program takes the coordinates of landmarks ID 4 (thumb) and ID 8 (index finger) and calculates the distance using math.hypot().
-4. Volume Interpolation : The distance values are converted to the system volume scale using numpy.interp().
-5. System Volume Control : The volume is controlled through the PyCaw API.
-6. Visualization : Displaying connecting lines between hand points Circles and coordinate labels at the fingertips, FPS in the upper left corner, Volume bar on the left side of the screen.
+- Video Capture : The camera captures video frames using cv2.VideoCapture().
+- Landmark Detection : The frames are processed with MediaPipe Hands to obtain 21 landmark points.
+- Distance Calculation : The program takes the coordinates of landmarks ID 4 (thumb) and ID 8 (index finger) and calculates the distance using math.hypot().
+- Volume Interpolation : The distance values are converted to the system volume scale using numpy.interp().
+- System Volume Control : The volume is controlled through the PyCaw API.
+- Visualization : Displaying connecting lines between hand points Circles and coordinate labels at the fingertips, FPS in the upper left corner, Volume bar on the left side of the screen.
+
+## 🚀 Installing and Running the Program
+### 1. Clone Repository
+```bash
+git clone https://github.com/404-mind72/Gesture-Volume-Control-with-Mediapipe-OpenCV.git
+```
+### 2. Install Dependencies
+```bash
+pip install opencv-python mediapipe numpy pycaw comtypes
+```
+### 3. Run The Program
+```bash
+python run app.py
+```
+## 📖 How to Use
+1. Make sure the camera is on and pointing at your hand.
+2. Short distance between thumb and index finger → Low volume
+3. Long distance → High volume
+4. The coordinates of your fingertip will appear on the screen to aid observation.
+5. Press ESC to exit the program.
+
+## 🎥 View Output
+- Real time detection results of helmet
+  
+![Bar Plot](helmet_captured.png)
+
+- Adjust the volume by changing the distance between your thumb (ID 4) and index finger (ID 8). The further apart, the higher the volume.
+  
+![Bar Plot](non_helmet_captured.png)
+
+## 💡 Further Development Ideas
+- Adding mute/unmute gestures with specific hand poses.
+- Supporting multi-hand detection for stereo control.
+- Integration with media player controls (pause, play, next).
+- Adding a graphical UI using Tkinter or PyQt.
+
+## 🚩Contributions
+I would appreciate contributions to improve the model, add or enhance features, and optimize the deployment process. For any queries, reach out to me at joni150703@gmail.com
+
+📄 License
+This project is licensed under the MIT License.
+Free to use, modify, and distribute.
+
