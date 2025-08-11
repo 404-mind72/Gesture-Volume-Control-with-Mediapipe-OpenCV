@@ -19,7 +19,7 @@ Volume control is performed through PyCaw, which interacts directly with the Win
 - PyCaw Volume control on Windows operating systems
 - Comtypes Interacts with Windows APIs via COM
 
-🏗 Program Architecture
+## 🏗 Program Architecture
 1. Video Capture : The camera captures video frames using cv2.VideoCapture().
 2. Landmark Detection : The frames are processed with MediaPipe Hands to obtain 21 landmark points.
 3. Distance Calculation : The program takes the coordinates of landmarks ID 4 (thumb) and ID 8 (index finger) and calculates the distance using math.hypot().
