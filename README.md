@@ -48,7 +48,10 @@ python run app.py
 5. Press ESC to exit the program.
 
 ## 🎥 View Output
+- Initial view
 ![Bar Plot](output.png)
+
+- Usage output
 ![Bar Plot](assets.png)
 
 ## 💡 Further Development Ideas
