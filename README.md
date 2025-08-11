@@ -65,7 +65,7 @@ python run app.py
 ## 🚩Contributions
 I would appreciate contributions to improve the model, add or enhance features, and optimize the deployment process. For any queries, reach out to me at joni150703@gmail.com
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License.
 Free to use, modify, and distribute.
 
