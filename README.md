@@ -1,4 +1,4 @@
-## 🖥 Gesture Volume Control with Mediapipe & OpenCV
+## 🎛 Gesture Volume Control with Mediapipe & OpenCV
 ## 📌 Project Description
 Gesture Volume Control is a Python-based application that allows users to control their computer's volume simply by gesturing with their hands in front of the camera.
 This application utilizes MediaPipe Hands to detect hand landmarks and then measures the distance between the thumb and index finger as a reference for volume.
